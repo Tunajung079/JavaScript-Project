@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center" >
+  <h1>โปรแกรมคำนวณราคาสินค้า</h1>
+  <p>** Born to Dev **</p> 
+  <p>By Nichakan Jaisaksern</p> 
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col-sm-6">
+        <h3>กรอกราคาสินค้า (บาท)</h3>
+      <input type="number" id="myPrice" value="" class="form-control"/>
+      </div>
+      <div class="col-sm-6">
+        <h3>กรอกส่วนลดของสินค้า (เปอร์เซ็น)</h3>
+      <input type="number" id="myDiscount" value="" class="form-control"/> <br/>
+      </div>
+  </div>
+  </div>
+
+  <div class="container-fluid bg-3 text-center">    
+    <div class="row">
+      <div class="col-sm-12">
+        <button onclick="toDiscount()" class="btn btn-success">คำนวณ</button>
+        <blockquote class="blockquote">
+        <p id="sum" class="mb-0" ></p>
+      </blockquote>
+      </div>
+    </div>
+  </div>
+<script src="app.js"> </script>
+</body>
+</html>
